@@ -1,7 +1,14 @@
 # base
 
+A super bare bones, nothing to it portfolio. 
+
 ## Project setup
+
+Clone and install
 ```
+cd ~/Sites
+git clone git@github.com:etuchscherer/portfolio.git
+cd ~/Sites/portfolio
 yarn install
 ```
 
@@ -24,6 +31,3 @@ yarn run test
 ```
 yarn run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
