@@ -23,3 +23,6 @@ git commit -m 'deploy'
 git push -f git@github.com:etuchscherer/portfolio.git master:gh-pages
 
 cd -
+
+# clean up
+rm -rf dist
