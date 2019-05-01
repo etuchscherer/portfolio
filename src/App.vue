@@ -7,7 +7,10 @@
           <h1 class="display-4 font-weight-regular darkest--text">Eric Tuchscherer</h1>
         </v-flex>
         <v-flex shrink>
-          <ul class="list-inline">
+          <h4 class="display-2 grey--text darken-4 my-2">Software Engineer from Seattle, WA</h4>
+        </v-flex>
+        <v-flex shrink>
+          <ul class="list-inline my-4">
             <li class="px-2">
               <a target="_new" class="social-link display-1 grey--text darken-4" href="https://twitter.com/e_tuchscherer">twitter</a>
             </li>
