@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-container fluid>
+      <VueGithubCorners :repoUrl="repoUrl" :catColor="catColor" :bgColor="bgColor"></VueGithubCorners>
       <v-layout column align-center justify-center fill-height>
         <v-flex shrink>
           <h1 class="display-4 font-weight-regular darkest--text">Eric Tuchscherer</h1>
@@ -26,6 +27,25 @@
 
   </v-app>
 </template>
+
+<script>
+import Vue from 'vue';
+import { VueGithubCorners } from 'vue2-github-corners';
+
+// https://github.com/WeiChiaChang/vue-github-corners
+Vue.component('VueGithubCorners', VueGithubCorners);
+
+export default {
+  data() {
+    return {
+      repoUrl: 'https://github.com/etuchscherer/portfolio',
+      bgColor: '#333',
+      catColor: '#FFF'
+    }
+  }
+}
+</script>
+
 
 <style lang="scss" scoped>
   .list-inline {
