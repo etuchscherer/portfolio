@@ -2,7 +2,6 @@
   <v-app>
     <v-container fluid>
       <VueGithubCorners :repoUrl="repoUrl" :catColor="catColor" :bgColor="bgColor"></VueGithubCorners>
-
       <seattle-drawer :open="shouldOpenDrawer" v-on:isClosed="openDrawer(false)"/>
 
       <v-layout column align-center justify-center fill-height>
@@ -82,6 +81,7 @@ export default {
   }
 
   span.hoverable:hover {
-    color: red;
+    color: tomato;
+    cursor: pointer;
   }
 </style>
