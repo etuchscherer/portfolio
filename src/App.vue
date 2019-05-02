@@ -3,14 +3,14 @@
     <v-container fluid>
       <VueGithubCorners :repoUrl="repoUrl" :catColor="catColor" :bgColor="bgColor"></VueGithubCorners>
 
-      <seattle-drawer :open="shouldOpenDrawer" v-on:isClosed="drawerClosed"/>
+      <seattle-drawer :open="shouldOpenDrawer" v-on:isClosed="openDrawer(false)"/>
 
       <v-layout column align-center justify-center fill-height>
         <v-flex shrink>
           <h1 class="display-4 font-weight-regular darkest--text">Eric Tuchscherer</h1>
         </v-flex>
         <v-flex shrink>
-          <h4 class="display-2 grey--text darken-4 my-2">Software Engineer from <span @click="doOpenDrawer()" class="hoverable">Seattle, WA</span></h4>
+          <h4 class="display-2 grey--text darken-4 my-2">Software Engineer from <span @click="openDrawer(true)" class="hoverable">Seattle, WA</span></h4>
         </v-flex>
         <v-flex shrink>
           <ul class="list-inline my-4">
@@ -58,11 +58,8 @@ export default {
     SeattleDrawer
   },
   methods: {
-    drawerClosed() {
-      this.shouldOpenDrawer = false;
-    },
-    doOpenDrawer() {
-      this.shouldOpenDrawer = true;
+    openDrawer(state) {
+      this.shouldOpenDrawer = state;
     }
   }
 }
